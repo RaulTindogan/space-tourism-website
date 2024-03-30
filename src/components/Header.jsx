@@ -4,10 +4,10 @@ import menu from '../assets/shared/icon-hamburger.svg'
 
 function Header() {
   return (
-    <header className='bg-transparent p-5'>
-        <nav>
+    <header className='bg-transparent absolute w-full'>
+        <nav className='max-w-[1440px] mx-auto'>
           {/* Mobile Menu */}
-            <div className='flex justify-between items-center lg:hidden'>
+            <div className='p-5 flex justify-between items-center md:hidden'>
               <div>
                   <a href="#"><img src={logo} alt="LOGO" /></a>
               </div>
@@ -16,16 +16,17 @@ function Header() {
               </div>
             </div>
           {/* Desktop Menu */}
-            <div className='hidden lg:flex justify-between'>
-              <div>
+            <div className='hidden md:flex justify-between items-center text-white pl-10 relative'>
+              <div className=''>
                   <a href="#"><img src={logo} alt="LOGO" /></a>
               </div>
-              <div>
-                <ul className='flex gap-10'>
-                  <li><a href="">00 HOME</a></li>
-                  <li><a href=""></a>01 DESTINATION</li>
-                  <li><a href="">02 CREW</a></li>
-                  <li><a href="">03 TECHNOLOGY</a></li>
+              <hr className='hidden lg:block w-[35%] h-[1px] absolute left-[8rem] z-10'/>
+              <div className='lg:w-[60%]'>
+                <ul className='flex gap-10 bg-black p-10 lg:justify-center xl:gap-[5rem]'>
+                  <li><a href="">HOME</a></li>
+                  <li><a href="">DESTINATION</a></li>
+                  <li><a href="">CREW</a></li>
+                  <li><a href="">TECHNOLOGY</a></li>
                 </ul>
               </div>
             </div>
