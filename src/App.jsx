@@ -1,11 +1,24 @@
-import { useState } from 'react'
 import Header from './components/Header'
+import Home from './pages/Home'
+import Page404 from './pages/Page404'
+import ScrollToTop from './components/ScrollToTop'
+import { BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom'
+
 
 function App() {
-  // const [count, setCount] = useState(0)
 
   return (
-    <Header />
+    <>
+       <Router>
+        <Header />
+        <ScrollToTop />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='404' element={<Page404 />} />
+          <Route path='*' element={<Navigate to='404' replace />}  />
+        </Routes>
+      </Router>
+    </>
   )
 }
 
