@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from '../assets/shared/logo.svg'
 import menu from '../assets/shared/icon-hamburger.svg'
-
+import { Link } from 'react-router-dom'
 function Header() {
   return (
     <header className='bg-transparent absolute w-full'>
@@ -23,10 +23,10 @@ function Header() {
               <hr className='hidden lg:block w-[35%] h-[1px] absolute left-[8rem] z-10'/>
               <div className='lg:w-[60%]'>
                 <ul className='flex gap-10 bg-black p-10 lg:justify-center xl:gap-[5rem]'>
-                  <li><a href="">HOME</a></li>
-                  <li><a href="">DESTINATION</a></li>
-                  <li><a href="">CREW</a></li>
-                  <li><a href="">TECHNOLOGY</a></li>
+                  <li><Link to="/">HOME</Link></li>
+                  <li><Link to="/destination">DESTINATION</Link></li>
+                  <li><Link to="/crew">CREW</Link></li>
+                  <li><Link to="/technology">TECHNOLOGY</Link></li>
                 </ul>
               </div>
             </div>
