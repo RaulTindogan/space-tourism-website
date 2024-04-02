@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../assets/shared/logo.svg'
 import menu from '../assets/shared/icon-hamburger.svg'
 import { Link } from 'react-router-dom'
 function Header() {
   return (
-    <header className='bg-transparent absolute w-full'>
-        <nav className='max-w-[1440px] mx-auto'>
+      <header className='bg-transparent fixed w-full'>
+        <nav className='max-w-[1440px] mx-auto relative z-20'>
           {/* Mobile Menu */}
             <div className='p-5 flex justify-between items-center md:hidden'>
               <div>
@@ -30,8 +30,16 @@ function Header() {
                 </ul>
               </div>
             </div>
-        </nav>
-    </header>
+        </nav>     
+        <div className='w-[60%] min-h-[100vh] fixed z-[10] bg-black/50 top-0 right-0 overflow-hidden text-white py-[7rem] px-[3rem]'>
+            <ul>
+              <li className='mb-10 py-2 border-b-[3px]'><Link to="/">00 HOME</Link></li>
+              <li className='mb-10 py-2 border-b-[3px]'><Link to="/destination">01 DESTINATION</Link></li>
+              <li className='mb-10 py-2 border-b-[3px]'><Link to="/crew">02 CREW</Link></li>
+              <li className='mb-10 py-2 border-b-[3px]'><Link to="/technology">03 TECHNOLOGY</Link></li>
+            </ul>
+        </div>
+      </header>
   )
 }
 
