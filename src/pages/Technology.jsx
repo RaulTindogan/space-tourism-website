@@ -30,7 +30,8 @@ function Technology() {
       <h1 className="
           text-xl text-center mb-10
           md:text-left
-        "><span>03</span> SPACE LAUCH 101</h1>
+          font-bellefair
+        "><span className=''>03</span> SPACE LAUCH 101</h1>
       <div className='md:flex md:flex-row-reverse'>
         <section className='mb-10 md:w-[40%] md:mb-0 md:flex justify-center items-center'>
               <picture className='flex justify-center mb-5 md:mb-0'>
@@ -42,13 +43,13 @@ function Technology() {
               <div className='mb-5 flex justify-center md:flex-col md:items-center md:mb-0'>
                   {
                       buttons.map((button, index)=>(
-                          <button key={index} onClick={()=>{handleactiveButton(button), handleactiveData(index)}}className={`border-[1px] border-white py-2 px-4 mx-2 my-2 rounded-[50%] md:py-3 md:px-6 md:text-2xl md:mb-5 ${activeButton==button? ' bg-[red]' : ' bg-transparent'}`}>{button}</button>
+                          <button key={index} onClick={()=>{handleactiveButton(button), handleactiveData(index)}}className={`font-bellefair border-[1px] border-white py-2 px-4 mx-2 my-2 rounded-[50%] md:py-3 md:px-6 md:text-2xl md:mb-5 ${activeButton==button? ' bg-[red]' : ' bg-transparent'}`}>{button}</button>
                       ))
                   }
               </div>
               <div className="md:flex flex-col justify-center md:text-left md:px-10">
                 <p>THE TERMINOLOGY...</p>
-                <h2 className='text-3xl uppercase mt-3 mb-10 md:mb-5'>{activeData.name}</h2>
+                <h2 className='text-3xl uppercase mt-3 mb-10 md:mb-5 font-bellefair'>{activeData.name}</h2>
                 <p className='sm:px-[5rem] md:px-0'>{activeData.description}</p>
               </div>
           </section>
