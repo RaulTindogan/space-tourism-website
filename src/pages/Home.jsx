@@ -18,8 +18,8 @@ function Home() {
       lg:items-end
       ">
         <div className='text-center lg:text-justify lg:pl-[4rem] lg:pr-[6rem] lg:w-1/2'>
-          <p className='md:text-2xl'>SO, YOU WANT TO TRAVEL TO</p>
-          <h1 className='text-[5rem] mb-5 md:text-[10rem]'>SPACE</h1>
+          <p className='font-barlow text-2xl md:text-2xl'>SO, YOU WANT TO TRAVEL TO</p>
+          <h1 className='text-[5rem] font-bellefair mb-5 md:text-[10rem]'>SPACE</h1>
           <p className='mb-[6rem] md:px-[5rem] md:text-xl md:mb-[15rem] lg:px-0 lg:mb-0'> 
               Let’s face it; if you want to go to space, you might as well genuinely go to 
               outer space and not hover kind of on the edge of it. Well sit back, and relax 
