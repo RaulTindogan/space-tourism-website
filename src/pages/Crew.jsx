@@ -44,11 +44,6 @@ function Crew() {
                 <button key={index} onClick={()=>{assignActiveCrew(index), handleactiveButton(button)}} className={`bg-white p-2 mx-2 rounded-full ${activeButton==button? ' bg-[red]': ''}`}></button>
             ))
           }
-          
-          {/* <button className='bg-white p-2 mx-2 rounded-full'></button>
-          <button className='bg-white p-2 mx-2 rounded-full'></button>
-          <button className='bg-white p-2 mx-2 rounded-full'></button>
-          <button className='bg-white p-2 mx-2 rounded-full'></button> */}
         </div>
       </section>
       <section className='text-center'>
