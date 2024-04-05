@@ -34,13 +34,13 @@ function Crew() {
       `}
     >
       <h1 className="
-          text-2xl text-center mb-10 md:text-left md:text-[2rem] md:mb-[5rem] lg:mb-[5rem] lg:mt-[2rem]
+          tracking-widest text-2xl text-center mb-10 md:text-left md:text-[2rem] md:mb-[5rem] lg:mb-[5rem] lg:mt-[2rem]
       "><span className="font-[600] text-grayish mr-3">02</span> MEET YOUR CREW</h1>
       <div className="lg:flex lg:flex-row-reverse lg:px-[5rem]">
         <section className='flex flex-col items-center mb-3 lg:w-[50%] lg:mb-0'>
           <div>
             <picture className='flex justify-center'>
-              <source media="(min-width: 768px)" srcset={activeCrew.images.webp} />
+              <source media="(min-width: 768px)" srcSet={activeCrew.images.webp} />
               <img src={activeCrew.images.png} alt="" className='max-w-[60%] lg:max-w-full'/>
             </picture>
           </div>

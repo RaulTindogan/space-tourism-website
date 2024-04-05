@@ -33,11 +33,12 @@ function Technology() {
       <h1 className="
           text-xl text-center mb-10
           md:text-left
-          font-bellefair
+          font-barlow
           md:text-[2rem]
           lg:mb-[5rem]
-        "><span className=''>03</span> SPACE LAUCH 101</h1>
-      <div className='md:flex md:flex-row-reverse'>
+          tracking-widest
+        "><span className='text-grayish font-[600] mr-5'>03</span> SPACE LAUCH 101</h1>
+      <div className='md:flex md:flex-row-reverse lg:px-[5rem]'>
         <section className='mb-10 md:w-[40%] md:mb-0 md:flex justify-center items-center'>
               <picture className='flex justify-center mb-5 md:mb-0'>
                   <source srcSet={activeData.images.portrait} media='(min-width: 768px)' />
@@ -53,9 +54,9 @@ function Technology() {
                   }
               </div>
               <div className="md:flex flex-col justify-center md:text-left md:px-10">
-                <p className='lg:text-3xl lg:mb-3'>THE TERMINOLOGY...</p>
-                <h2 className='text-3xl uppercase mt-3 mb-10 md:mb-5 font-bellefair lg:text-[3rem] lg:mb-10'>{activeData.name}</h2>
-                <p className='sm:px-[5rem] md:px-0 lg:leading-9'>{activeData.description}</p>
+                <p className='text-parColor lg:text-xl lg:mb-3'>THE TERMINOLOGY...</p>
+                <h2 className='font-[800] text-3xl uppercase mt-3 mb-10 md:mb-5 font-bellefair lg:text-[3rem] lg:mb-10'>{activeData.name}</h2>
+                <p className='text-parColor sm:px-[5rem] md:px-0 lg:leading-9'>{activeData.description}</p>
               </div>
           </section>
       </div>

@@ -34,7 +34,7 @@ function Destination() {
             `}
     >
       <section className='flex flex-col justify-center mb-10 lg:w-[40%] lg:justify-start'>
-        <h1 className="text-2xl text-center mb-10 md:text-left md:text-[2rem] md:mb-[5rem]"><span>01</span> PICK YOUR DESTINATION</h1>
+        <h1 className="tracking-widest text-2xl text-center mb-10 md:text-left md:text-[2rem] md:mb-[6rem]"><span className='font-[600] text-grayish mr-5'>01</span> PICK YOUR DESTINATION</h1>
         <div className='flex justify-center items-center'>
           <img src={displayData.images.webp} alt="Moon" className='w-3/4 h-3/4 sm:w-1/2 sm:h-1/2 lg:w-full lg:h-full'/>
         </div>
