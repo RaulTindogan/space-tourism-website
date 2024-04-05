@@ -18,9 +18,9 @@ function Crew() {
     <main
       className={`
         max-w-[1440px] mx-auto
-        bg-[url('src/assets/crew/background-crew-mobile.jpg')]
-        md:bg-[url('src/assets/crew/background-crew-tablet.jpg')]
-        lg:bg-[url('src/assets/crew/background-crew-desktop.jpg')]
+        bg-[url('./src/assets/crew/background-crew-mobile.jpg')]
+        md:bg-[url('./src/assets/crew/background-crew-tablet.jpg')]
+        lg:bg-[url('./src/assets/crew/background-crew-desktop.jpg')]
         bg-cover
         bg-no-repeat
         min-h-[100vh] 
