@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import data from '../assets/data.json'
+import data from '/public/assets/data.json'
 
 function Technology() {
 //   console.log(data.technology[1])
@@ -18,7 +18,9 @@ function Technology() {
     <main
       className={`
         max-w-[1440px] mx-auto
-        bg-[url('src/assets/crew/background-crew-mobile.jpg')]
+        bg-[url('https://raw.githubusercontent.com/RaulTindogan/space-tourism-website/main/public/assets/technology/background-technology-mobile.jpg')]
+        md:bg-[url('https://github.com/RaulTindogan/space-tourism-website/blob/main/public/assets/technology/background-technology-tablet.jpg')]
+        lg:bg-[url('https://raw.githubusercontent.com/RaulTindogan/space-tourism-website/main/public/assets/technology/background-technology-desktop.jpg')]
         bg-cover
         bg-no-repeat
         min-h-[100vh] 

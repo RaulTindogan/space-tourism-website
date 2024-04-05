@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import data from '../assets/data.json'
+import data from '/public/assets/data.json'
 
 function Destination() {
   const [displayData, setdisplayData] = useState(data.destinations[0])
@@ -18,7 +18,8 @@ function Destination() {
     <main 
         className={`
             max-w-[1440px] mx-auto
-            bg-[url('src/assets/destination/background-destination-mobile.jpg')]
+            bg-[url('https://raw.githubusercontent.com/RaulTindogan/space-tourism-website/main/public/assets/destination/background-destination-mobile.jpg')]
+            md:bg-[url('https://raw.githubusercontent.com/RaulTindogan/space-tourism-website/main/public/assets/destination/background-destination-tablet.jpg')]
             bg-cover
             bg-no-repeat
             min-h-[100vh] 
@@ -27,7 +28,7 @@ function Destination() {
             text-white
             px-5
             sm:px-10
-            md:bg-[url('src/assets/destination/background-destination-desktop.jpg')]
+            lg:bg-[url('https://raw.githubusercontent.com/RaulTindogan/space-tourism-website/main/public/assets/destination/background-destination-desktop.jpg')]
             md:pt-[10rem]
             lg:flex
             lg:pt-[12rem]

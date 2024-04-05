@@ -1,5 +1,4 @@
 import React from 'react'
-// import HomeBg from './assets/home/background-home-mobile.jpg'
 
 function Home() {
   return (
@@ -7,11 +6,11 @@ function Home() {
     className="
       max-w-[1440px] mx-auto
       flex flex-col items-center pt-[8rem] pb-10 px-5 
-      bg-[url('./src/assets/home/background-home-mobile.jpg')] 
+      bg-[url('https://github.com/RaulTindogan/space-tourism-website/blob/main/public/assets/home/background-home-mobile.jpg?raw=true')] 
       min-h-[100vh] text-white bg-no-repeat bg-cover bg-center
-      md:bg-[url('./src/assets/home/background-home-tablet.jpg')] 
+      md:bg-[url('https://github.com/RaulTindogan/space-tourism-website/blob/main/public/assets/home/background-home-tablet.jpg?raw=true')] 
       md:pt-[12rem]
-      lg:bg-[url('./src/assets/home/background-home-desktop.jpg')] 
+      lg:bg-[url('https://raw.githubusercontent.com/RaulTindogan/space-tourism-website/main/public/assets/home/background-home-desktop.jpg')] 
       lg:px-[3.5rem]
       lg:flex-row
       lg:pb-[8rem]

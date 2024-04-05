@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import logo from '../assets/shared/logo.svg'
-import menu from '../assets/shared/icon-hamburger.svg'
-import closeMenu from '../assets/shared/icon-close.svg'
+import logo from '/assets/shared/logo.svg'
+import menu from '/assets/shared/icon-hamburger.svg'
+import closeMenu from '/public/assets/shared/icon-close.svg'
 import { NavLink } from 'react-router-dom'
 function Header() {
   const [activeNav, setactiveNav] = useState(false)
