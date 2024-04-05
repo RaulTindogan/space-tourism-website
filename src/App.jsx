@@ -19,7 +19,7 @@ function App() {
           <Route path='/destination' element={<Destination />} />
           <Route path='/crew' element={<Crew />} />
           <Route path='/technology' element={<Technology />} />
-          <Route path='404' element={<Page404 />} />
+          <Route path='/404' element={<Page404 />} />
           <Route path='*' element={<Navigate to='404' replace />}  />
         </Routes>
       </Router>
